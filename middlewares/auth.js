@@ -22,3 +22,4 @@ export const Authenticate = async (req,res,next) =>{
         res.json({message:error})
     }
 }
+//this is a auth file//
