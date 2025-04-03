@@ -29,8 +29,8 @@ app.use('/api',recipeRouter)
 mongoose
  .connect(
    process.env.MONGO_URL,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    
+   
     serverSelectionTimeoutMS: 20000, // Increase timeout to 20 seconds
     socketTimeoutMS: 45000 // Increase socket timeout
    },
