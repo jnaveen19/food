@@ -27,7 +27,8 @@ app.use("/api", recipeRouter);
 ////'mongodb+srv://navi:lion@cluster0.hcwak70.mongodb.net/'
 //mongodb://localhost:27017/
 //s@email.com password :111
-const dbURI = process.env.MONGODB_URL;
+const dbURI = process.env.MONGO_URL;
+console.log(dbURI)
 mongoose.connect(dbURI,{
       useNewUrlParser: true,//set new url
       useUnifiedTopology: true,
