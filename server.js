@@ -28,10 +28,11 @@ app.use("/api", recipeRouter);
 //mongodb://localhost:27017/
 //s@email.com password :111
 mongoose
-  .connect(
-    process.env.MONGO_URL,
-    
-    {
+  .connect(process.env.MONGO_URL,{
+      useNewUrlParser: true,//set new url
+      useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 20000, // Increase timeout to 20 seconds
+      socketTimeoutMS: 45000, // Increase socket timeout
       dbName: "MERN_Recipe_YouTube",
     }
   )
