@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 app.use('/api',userRouter)
 // recipeRouter
 app.use('/api',recipeRouter)
-
+////'mongodb+srv://navi:lion@cluster0.hcwak70.mongodb.net/'
 //mongodb://localhost:27017/
 //s@email.com password :111
 mongoose
