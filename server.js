@@ -28,7 +28,7 @@ app.use("/api", recipeRouter);
 //mongodb://localhost:27017/
 //s@email.com password :111
 const dbURI = process.env.MONGO_URL;
-console.log(dbURI)
+//console.log(dbURI)
 mongoose.connect(dbURI,{
       useNewUrlParser: true,//set new url
       useUnifiedTopology: true,
